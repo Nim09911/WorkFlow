@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.theme-dark {
+    --primary: #111;
+    --secondary: #0fd;
+    --success: #0f0;
+    --danger: #f20;
+    --warning: #fa0;
+}
+
+.theme-light {
+    --primary: #fff;
+    --secondary: #00f;
+    --success: #0f0;
+    --danger: #f20;
+    --warning: #fa0;
+}
+
+html, body {
+    margin: 0;
+    padding: zero;
+    height: 100%;
+    width: 100%;
+}
