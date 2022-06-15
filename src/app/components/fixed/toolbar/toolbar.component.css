@@ -1,0 +1,19 @@
+@import './../../../../styles.css';
+
+mat-toolbar {
+  width: 100%;
+  background-color: var(--bg-secondary);
+}
+
+mat-toolbar * {
+  margin: 0px 10px;
+  color: var(--text-primary);
+}
+
+mat-icon {
+  cursor: pointer;
+}
+
+a {
+  color: var(--text-primary);
+}

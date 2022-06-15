@@ -1,12 +1,28 @@
-<div class="{{storedTheme}}">
+<app-nav class="{{ storedTheme }}"></app-nav>
 
-<p>
-  Hello There
-  {{storedTheme}}
-</p>
-<p>
-  <button (click)="setTheme('theme-dark')">Click Here to Change Dark Theme</button>
-  <button (click)="setTheme('theme-light')">Click Here to Change Light Theme</button>
-</p>
+<mat-sidenav-container autosize class="{{ storedTheme }}">
+  <!-- menu -->
+  <mat-sidenav #sidenav mode="over" backDrop="true" class="{{ storedTheme }}">
+    <mat-nav-list *ngFor="let item of list">
+      <mat-list-item [routerLink]="item.path" (click)="sidenav.toggle()">
+        <span class="menu-item">{{ item.name }}</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <!-- main content -->
+  <mat-sidenav-content class="{{ storedTheme }}">
+    <!-- <router-outlet></router-outlet> -->
+    <app-toolbar name="Workflow" ></app-toolbar>
 
-</div>
+    <footer>
+      <p>
+        <button (click)="setTheme('theme-dark')">
+          Click Here to Change Dark Theme
+        </button>
+        <button (click)="setTheme('theme-light')">
+          Click Here to Change Light Theme
+        </button>
+      </p>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
