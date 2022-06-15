@@ -9,6 +9,7 @@ export class NavComponent implements OnInit {
   constructor() {}
 
   theme : boolean = false;
+  themeName : string = 'Light';
   @Output() setTheme = new EventEmitter<string>();
   
   ngOnInit(): void {
@@ -19,9 +20,11 @@ export class NavComponent implements OnInit {
     this.theme = !this.theme;
     if(this.theme) {
       this.setTheme.emit('theme-dark');
+      this.themeName = 'Dark';
     }
     else {
       this.setTheme.emit('theme-light');
+      this.themeName = 'Light';
     }
     console.log(this.theme);
   }

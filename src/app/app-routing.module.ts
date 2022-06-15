@@ -1,59 +1,60 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { Page1Component } from './components/pages/page1/page1.component';
+import { Page2Component } from './components/pages/page2/page2.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
+    component: Page1Component,
   },
   {
     path: 'page2',
-    component:AppComponent,
+    component:Page2Component,
   },
   {
     path: 'page3',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page4',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page5',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page6',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page7',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page8',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page9',
-    component:AppComponent,
+    component:Page1Component,
   },
   {
     path: 'page10',
-    component: AppComponent,
+    component: Page1Component,
   },
   {
     path: 'page11',
-    component: AppComponent,
+    component: Page1Component,
   },
   {
     path: 'page12',
-    component: AppComponent,
+    component: Page1Component,
   },
   {
     path: 'page13',
-    component: AppComponent,
+    component: Page1Component,
   },
 ];
 

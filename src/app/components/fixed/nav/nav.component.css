@@ -4,7 +4,6 @@
 .nav {
   width: 100%;
   height: 5rem;
-  vertical-align: baseline;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font: normal normal normal 2.5rem/2.9375rem Times New Roman;
@@ -73,6 +72,10 @@ td {
   opacity: 1;
 }
 
+.theme {
+  font: normal normal normal 2.5rem/2.9375rem Times New Roman;
+}
+
 .mat-slide-toggle {
   cursor: pointer;
   text-decoration: none;
@@ -91,6 +94,8 @@ td {
   color: var(--text-primary);
   width: 2.0625rem;
   height: 2.0625rem;
+  position: relative;
+  top: 5px;
 }
 .fa-angle-left {
   color: var(--text-primary);
@@ -102,7 +107,6 @@ td {
   font: normal normal normal 2.5rem/2.9375rem Times New Roman;
   letter-spacing: 0rem;
   color: var(--text-primary);
-  opacity: 1;
 }
 
 .right {
@@ -156,7 +160,7 @@ td {
     display: none;
   }
 
-  .nav span:nth-child(2) {
+  .left {
     position: relative;
     left: -1.875rem;
     transition: 0.2s;

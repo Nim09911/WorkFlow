@@ -1,34 +1,9 @@
-div {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-
-footer {
-  position: fixed;
-  height: 5rem;
-  bottom: 0;
-}
-
-p {
-  margin: 0;
-  background-color: var(--primary);
-  font-size: var(--display-6);
-  height: 5rem;
-}
-
-button {
-  font-size: var(--display-6);
-}
-
 body {
   background-color: var(--bg-primary);
 }
 
 mat-sidenav-container {
-  height: 91.8vh;
+  height: calc(100% - 5rem);
 }
 
 mat-sidenav-container * {

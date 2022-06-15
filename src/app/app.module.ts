@@ -27,12 +27,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //services
 import { SidenavService } from './services/sidenavService/sidenav.service';
+import { Page1Component } from './components/pages/page1/page1.component';
+import { Page2Component } from './components/pages/page2/page2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    Page1Component,
+    Page2Component
   ],
   imports: [
     BrowserModule,
