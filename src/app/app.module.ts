@@ -27,7 +27,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //services
 import { SidenavService } from './services/sidenavService/sidenav.service';
-import { ThemeService } from './services/themeService/theme.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +46,6 @@ import { ThemeService } from './services/themeService/theme.service';
   ],
   providers: [
     SidenavService,
-    ThemeService,
   ],
   bootstrap: [AppComponent]
 })

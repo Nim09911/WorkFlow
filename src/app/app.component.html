@@ -1,4 +1,4 @@
-<app-nav class="{{ storedTheme }}"></app-nav>
+<app-nav class="{{ storedTheme }}" (setTheme)="recvTheme($event)"></app-nav>
 
 <mat-sidenav-container autosize class="{{ storedTheme }}">
   <!-- menu -->
@@ -16,12 +16,12 @@
 
     <footer>
       <p>
-        <button (click)="setTheme('theme-dark')">
+        <!-- <button (click)="setTheme('theme-dark')">
           Click Here to Change Dark Theme
         </button>
         <button (click)="setTheme('theme-light')">
           Click Here to Change Light Theme
-        </button>
+        </button> -->
       </p>
     </footer>
   </mat-sidenav-content>

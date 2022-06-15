@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ThemeService } from 'src/app/services/themeService/theme.service';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -8,20 +7,22 @@ import { ThemeService } from 'src/app/services/themeService/theme.service';
 })
 export class NavComponent implements OnInit {
   constructor() {}
-  theme :boolean = true;
-  selectedTheme = new ThemeService();
 
+  theme : boolean = false;
+  @Output() setTheme = new EventEmitter<string>();
+  
   ngOnInit(): void {
-    this.selectTheme();
+
   }
 
-  selectTheme() {
+  onChangeToggle() {
     this.theme = !this.theme;
     if(this.theme) {
-      this.selectedTheme.setTheme('theme-dark');
+      this.setTheme.emit('theme-dark');
     }
     else {
-      this.selectedTheme.setTheme('theme-light');
+      this.setTheme.emit('theme-light');
     }
+    console.log(this.theme);
   }
 }

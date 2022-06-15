@@ -1,7 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { SidenavService } from './services/sidenavService/sidenav.service';
 import { MatSidenav } from '@angular/material/sidenav';
-import { ThemeService } from './services/themeService/theme.service';
 
 export interface List {
   path: string;
@@ -18,18 +17,17 @@ export class AppComponent implements AfterViewInit {
   title = 'Workflow';
   storedTheme : string | any = 'theme-light';
 
-  setTheme(theme : string | any) {
-    theme = localStorage.setItem('theme-color', theme);
-    this.storedTheme = localStorage.getItem('theme-color');
-  }
-
   @ViewChild('sidenav') public sidenav!: MatSidenav;
 
-  constructor(private sidenavService: SidenavService, private themeService: ThemeService) {}
+  constructor(private sidenavService: SidenavService) {}
 
   ngAfterViewInit(): void {
     this.sidenavService.setSidenav(this.sidenav);
-    this.storedTheme = localStorage.getItem('theme-color');
+  }
+
+  recvTheme($event : any) {
+    this.storedTheme = $event;
+    console.log($event);
   }
 
   list: List[] = [
