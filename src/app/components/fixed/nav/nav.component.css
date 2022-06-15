@@ -117,6 +117,15 @@ td {
   margin: 0.3125rem 0.625rem;
 }
 
+::ng-deep .mat-slide-toggle-thumb {
+  background-color: var(--text-primary) !important;
+  opacity: 1 !important;
+}
+
+::ng-deep .mat-slide-toggle-bar {
+  background-color: var(--bg-secondary) !important;
+}
+
 @media only screen and (max-width: 50rem) {
   .right label {
     display: none;
