@@ -73,7 +73,7 @@ td {
   opacity: 1;
 }
 
-.fa-toggle-on {
+.mat-slide-toggle {
   cursor: pointer;
   text-decoration: none;
   color: var(--text-primary);
