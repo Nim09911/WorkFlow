@@ -31,7 +31,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   list: List[] = [
-    { path: '', name: 'Client Holdings Ledger (RM)' },
+    { path: '', name: 'Workflow' },
     { path: 'page2', name: 'Client Dashboard' },
     { path: 'page3', name: 'Asset Mode' },
     { path: 'page4', name: 'Portfolio View' },

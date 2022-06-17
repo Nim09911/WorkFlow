@@ -3,7 +3,7 @@ body {
 }
 
 mat-sidenav-container {
-  height: calc(100% - 5rem);
+  height: calc(100% - 4.5rem);
 }
 
 mat-sidenav-container * {
@@ -12,6 +12,17 @@ mat-sidenav-container * {
 }
 
 .menu-item {
-  margin: 0px 3px 3px 0px;
+  margin: 0rem 0.125rem 0.125rem 0rem;
   padding: 0;
+}
+
+.logo {
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--text-secondary) !important;
+  font: normal normal normal 2.5rem/2.9375rem Times New Roman;
 }

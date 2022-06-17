@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
 
   }
 
-  onChangeToggle() {
+  toggleTheme() {
     this.theme = !this.theme;
     if(this.theme) {
       this.setTheme.emit('theme-dark');

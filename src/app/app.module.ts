@@ -1,5 +1,9 @@
+// Standard Modules and Components
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 //Angular Material
 import { MatIconModule } from '@angular/material/icon';
@@ -19,16 +23,22 @@ import { MatTableModule } from '@angular/material/table';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+//fixed components
 import { NavComponent } from './components/fixed/nav/nav.component';
 import { ToolbarComponent } from './components/fixed/toolbar/toolbar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//page components
+import { Page1Component } from './components/pages/page1/page1.component';
+import { Page2Component } from './components/pages/page2/page2.component';
+
 
 //services
 import { SidenavService } from './services/sidenavService/sidenav.service';
-import { Page1Component } from './components/pages/page1/page1.component';
-import { Page2Component } from './components/pages/page2/page2.component';
+import { WorkflowComponent } from './components/pages/workflow/workflow.component';
+import { WorkflowNavComponent } from './components/pages/workflow/workflow-nav/workflow-nav.component';
+import { WorkflowSidenavComponent } from './components/pages/workflow/workflow-sidenav/workflow-sidenav.component';
+import { WorkflowMainComponent } from './components/pages/workflow/workflow-main/workflow-main.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +46,11 @@ import { Page2Component } from './components/pages/page2/page2.component';
     NavComponent,
     ToolbarComponent,
     Page1Component,
-    Page2Component
+    Page2Component,
+    WorkflowComponent,
+    WorkflowNavComponent,
+    WorkflowSidenavComponent,
+    WorkflowMainComponent,
   ],
   imports: [
     BrowserModule,

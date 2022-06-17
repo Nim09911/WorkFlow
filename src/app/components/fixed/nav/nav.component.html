@@ -3,19 +3,16 @@
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
 />
 <nav class="nav">
-  <span style="width: 98%">
-    <span>
-      <table>
-        <tr>
-          <td class="P">P</td>
-          <td class="S">S</td>
-        </tr>
-        <tr>
-          <td class="R">R</td>
-          <td class="W">W</td>
-        </tr>
-      </table>
-    </span>
+    <table style="display: inline-block">
+      <tr>
+        <td class="P">P</td>
+        <td class="S">S</td>
+      </tr>
+      <tr>
+        <td class="R">R</td>
+        <td class="W">W</td>
+      </tr>
+    </table>
     <span class="left">
       <a style="cursor: pointer; text-decoration: none; color: white" href="#">
         <i class="fa fa-angle-left"></i>
@@ -25,10 +22,9 @@
       <span class="FinIQ"> FinIQ </span>
     </span>
     <span class="right">
-      <mat-slide-toggle class="mat-slide-toggle" (click)="onChangeToggle()"></mat-slide-toggle>
+      <mat-slide-toggle class="mat-slide-toggle" (click)="toggleTheme()"></mat-slide-toggle>
       <span class="pb"> Private Banking: NJ </span>
       <i class="fa fa-power-off"></i>
       <i class="fa fa-gear"></i>
     </span>
-  </span>
 </nav>

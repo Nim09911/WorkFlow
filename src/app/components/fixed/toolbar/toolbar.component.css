@@ -7,14 +7,10 @@ mat-toolbar {
 }
 
 mat-toolbar * {
-  margin: 0px 10px;
+  margin: 0px 18px;
   color: var(--text-primary);
 }
 
 mat-icon {
   cursor: pointer;
-}
-
-a {
-  color: var(--text-primary);
 }

@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    margin: 0.2rem;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 35vh;
+    grid-gap: 1.25rem;
+    margin: 1.25rem;
+}
+
+.grid-item {
+    border-radius: 1.25rem;
+    background-color: var(--bg-primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+}
+
+.inner-grid {
+    display: inline-grid;
+    margin: 0.75rem;
+}
